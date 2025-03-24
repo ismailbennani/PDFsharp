@@ -1,4 +1,11 @@
-﻿# PDFsharp & MigraDoc 6
+﻿> [!NOTE]
+> The purpose of this fork is to create a version of PDFSharp that does not output the XMP metadata when saving the PDF document. This is necessary to allow the developer to provide their own metadata.
+> 
+> There is already an issue and [a PR](https://github.com/empira/PDFsharp/pull/44) that has been open since Oct. 2023 but it has not been merged yet, the maintainers 'want a clean solution, not a quick hack that solves one issue, but leads to other issues'. The author of the PR has also created a NuGet package with the fix, but it also contains other changes that are not necessary for my use case.
+> 
+> This fork only fixes the issue with the XMP metadata and does not contain any other changes. I will try my best to keep it up to date with the original repository. The build is available as a [NuGet library](https://www.nuget.org/packages/FacturXDotNet.PDFsharp) 
+
+# PDFsharp & MigraDoc 6
 
 Version **6.2.0 Preview 3**  
 Published **2025-02-06**
