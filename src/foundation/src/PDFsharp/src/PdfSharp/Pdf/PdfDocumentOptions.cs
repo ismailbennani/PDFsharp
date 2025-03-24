@@ -81,5 +81,20 @@ namespace PdfSharp.Pdf
             set => _useFlateDecoderForJpegImages = value;
         }
         PdfUseFlateDecoderForJpegImages _useFlateDecoderForJpegImages = PdfUseFlateDecoderForJpegImages.Never;
+
+        /// <summary>
+        /// Indicates whether PDFsharp should automatically generate XMP metadata or if it should be provided manually by the user.
+        /// When set to true, PDFsharp will create new metadata and update the catalog reference to point to it, preventing user-created or existing metadata from being used.
+        /// Defaults to true.
+        /// </summary>
+        /// <remarks>
+        /// WARNING: If set to false, the user must provide the XMP metadata.
+        /// </remarks>
+        public bool AutomaticXmpGeneration
+        {
+            get => _automaticXmpGeneration;
+            set => _automaticXmpGeneration = value;
+        }
+        bool _automaticXmpGeneration = false;
     }
 }
